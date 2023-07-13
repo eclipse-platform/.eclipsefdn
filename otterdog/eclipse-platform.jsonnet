@@ -16,6 +16,9 @@ orgs.newOrg('eclipse-platform') {
     packages_containers_internal: false,
     packages_containers_public: false,
     readers_can_create_discussions: true,
+    security_managers+: [
+      "eclipse-platform-committers"
+    ],
     twitter_username: "EclipseJavaIDE",
     two_factor_requirement: false,
     web_commit_signoff_required: false,
