@@ -490,6 +490,9 @@ orgs.newOrg('eclipse-platform') {
     orgs.newRepo('ui-best-practices') {
       allow_merge_commit: false,
       description: "UI Best Practices for the Eclipse IDE",
+      gh_pages_build_type: "legacy",
+      gh_pages_source_branch: "gh-pages",
+      gh_pages_source_path: "/",
       has_discussions: true,
       homepage: "https://eclipse-platform.github.io/ui-best-practices/",
       secret_scanning: "disabled",
