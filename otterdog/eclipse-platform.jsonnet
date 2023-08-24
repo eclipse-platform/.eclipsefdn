@@ -39,8 +39,6 @@ orgs.newOrg('eclipse-platform') {
       has_discussions: true,
       has_projects: false,
       homepage: "https://www.eclipse.org/eclipse/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "eclipse"
       ],
@@ -51,8 +49,6 @@ orgs.newOrg('eclipse-platform') {
       default_branch: "master",
       has_discussions: true,
       homepage: "https://www.eclipse.org/eclipse/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "eclipse",
         "java"
@@ -78,8 +74,6 @@ orgs.newOrg('eclipse-platform') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://www.eclipse.org/eclipse",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
@@ -107,8 +101,6 @@ orgs.newOrg('eclipse-platform') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://www.eclipse.org/eclipse/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "debug",
         "eclipse",
@@ -135,8 +127,6 @@ orgs.newOrg('eclipse-platform') {
       dependabot_alerts_enabled: false,
       has_projects: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
@@ -157,8 +147,6 @@ orgs.newOrg('eclipse-platform') {
       dependabot_alerts_enabled: false,
       has_discussions: true,
       has_projects: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
@@ -182,8 +170,6 @@ orgs.newOrg('eclipse-platform') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://www.eclipse.org/eclipse/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "eclipse",
         "ide",
@@ -228,8 +214,6 @@ orgs.newOrg('eclipse-platform') {
       dependabot_alerts_enabled: false,
       has_projects: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
@@ -249,8 +233,6 @@ orgs.newOrg('eclipse-platform') {
       default_branch: "master",
       has_projects: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
@@ -273,8 +255,6 @@ orgs.newOrg('eclipse-platform') {
       default_branch: "master",
       has_projects: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
@@ -296,8 +276,6 @@ orgs.newOrg('eclipse-platform') {
       has_discussions: true,
       has_projects: false,
       homepage: "https://www.eclipse.org/swt/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "cross-platform-gui",
         "eclipse",
@@ -345,8 +323,6 @@ orgs.newOrg('eclipse-platform') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://www.eclipse.org/swt/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
@@ -373,8 +349,6 @@ orgs.newOrg('eclipse-platform') {
       dependabot_alerts_enabled: false,
       has_projects: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
@@ -394,8 +368,6 @@ orgs.newOrg('eclipse-platform') {
       default_branch: "master",
       has_projects: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
@@ -416,8 +388,6 @@ orgs.newOrg('eclipse-platform') {
       dependabot_alerts_enabled: false,
       has_projects: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
@@ -441,8 +411,6 @@ orgs.newOrg('eclipse-platform') {
       has_projects: false,
       has_wiki: false,
       homepage: "https://projects.eclipse.org/projects/eclipse.platform",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "eclipse",
         "gui",
@@ -471,8 +439,6 @@ orgs.newOrg('eclipse-platform') {
       dependabot_alerts_enabled: false,
       has_projects: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
@@ -495,8 +461,6 @@ orgs.newOrg('eclipse-platform') {
       gh_pages_source_path: "/",
       has_discussions: true,
       homepage: "https://eclipse-platform.github.io/ui-best-practices/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       environments: [
         orgs.newEnvironment('github-pages') {
@@ -512,8 +476,6 @@ orgs.newOrg('eclipse-platform') {
       default_branch: "master",
       has_projects: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       webhooks: [
         orgs.newRepoWebhook('https://ci.eclipse.org/releng/github-webhook/') {
@@ -536,8 +498,6 @@ orgs.newOrg('eclipse-platform') {
       default_branch: "master",
       has_projects: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       webhooks: [
         orgs.newRepoWebhook('https://ci.eclipse.org/releng/github-webhook/') {
@@ -557,8 +517,6 @@ orgs.newOrg('eclipse-platform') {
     },
     orgs.newRepo('www.eclipse.org-swt') {
       default_branch: "master",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
