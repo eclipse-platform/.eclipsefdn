@@ -73,6 +73,7 @@ orgs.newOrg('eclipse-platform') {
     },
     orgs.newRepo('eclipse.platform.common') {
       allow_merge_commit: false,
+      archived: true,
       default_branch: "master",
       dependabot_alerts_enabled: false,
       has_projects: false,
@@ -102,6 +103,7 @@ orgs.newOrg('eclipse-platform') {
     },
     orgs.newRepo('eclipse.platform.debug') {
       allow_merge_commit: false,
+      archived: true,
       default_branch: "master",
       description: "Eclipse Platform Debug functionality",
       has_projects: false,
@@ -153,6 +155,7 @@ orgs.newOrg('eclipse-platform') {
     },
     orgs.newRepo('eclipse.platform.releng') {
       allow_merge_commit: false,
+      archived: true,
       default_branch: "master",
       dependabot_alerts_enabled: false,
       has_discussions: true,
@@ -246,6 +249,7 @@ orgs.newOrg('eclipse-platform') {
     },
     orgs.newRepo('eclipse.platform.resources') {
       allow_merge_commit: false,
+      archived: true,
       default_branch: "master",
       has_projects: false,
       has_wiki: false,
@@ -270,6 +274,7 @@ orgs.newOrg('eclipse-platform') {
     },
     orgs.newRepo('eclipse.platform.runtime') {
       allow_merge_commit: false,
+      archived: true,
       default_branch: "master",
       has_projects: false,
       has_wiki: false,
@@ -369,6 +374,7 @@ orgs.newOrg('eclipse-platform') {
     },
     orgs.newRepo('eclipse.platform.team') {
       allow_merge_commit: false,
+      archived: true,
       default_branch: "master",
       dependabot_alerts_enabled: false,
       has_projects: false,
@@ -391,6 +397,7 @@ orgs.newOrg('eclipse-platform') {
     },
     orgs.newRepo('eclipse.platform.text') {
       allow_merge_commit: false,
+      archived: true,
       default_branch: "master",
       has_projects: false,
       has_wiki: false,
@@ -412,6 +419,7 @@ orgs.newOrg('eclipse-platform') {
     },
     orgs.newRepo('eclipse.platform.ua') {
       allow_merge_commit: false,
+      archived: true,
       default_branch: "master",
       dependabot_alerts_enabled: false,
       has_projects: false,
@@ -533,6 +541,7 @@ orgs.newOrg('eclipse-platform') {
     },
     orgs.newRepo('www.eclipse.org-eclipse-news') {
       allow_merge_commit: false,
+      archived: true,
       default_branch: "master",
       has_projects: false,
       has_wiki: false,
