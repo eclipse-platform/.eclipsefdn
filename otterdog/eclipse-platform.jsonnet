@@ -5,7 +5,6 @@ orgs.newOrg('eclipse-platform') {
     billing_email: "webmaster@eclipse.org",
     blog: "https://www.eclipse.org/eclipse/",
     default_repository_permission: "none",
-    default_workflow_permissions: "write",
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "Eclipse Platform is a framework for rich client applications in Java, powering the Eclipse IDE and other toolsets",
     email: "platform-dev@eclipse.org",
@@ -20,6 +19,9 @@ orgs.newOrg('eclipse-platform') {
     twitter_username: "EclipseJavaIDE",
     two_factor_requirement: false,
     web_commit_signoff_required: false,
+    workflows+: {
+      default_workflow_permissions: "write",
+    },
   },
   webhooks+: [
     orgs.newOrgWebhook('https://ci.eclipse.org/platform/github-webhook/') {
