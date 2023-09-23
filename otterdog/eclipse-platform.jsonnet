@@ -34,7 +34,7 @@ orgs.newOrg('eclipse-platform') {
   ],
   _repositories+:: [
     orgs.newRepo('.github') {
-      allow_merge_commit: false,
+      delete_branch_on_merge: false,
       description: "Common contribution content for eclipse-platform repositories",
       has_discussions: true,
       has_projects: false,
@@ -45,8 +45,8 @@ orgs.newOrg('eclipse-platform') {
       web_commit_signoff_required: false,
     },
     orgs.newRepo('eclipse.platform') {
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       has_discussions: true,
       homepage: "https://www.eclipse.org/eclipse/",
       topics+: [
@@ -68,8 +68,8 @@ orgs.newOrg('eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.common') {
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       has_projects: false,
       has_wiki: false,
@@ -95,8 +95,8 @@ orgs.newOrg('eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.debug') {
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       description: "Eclipse Platform Debug functionality",
       has_projects: false,
       has_wiki: false,
@@ -122,8 +122,8 @@ orgs.newOrg('eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.images') {
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       has_projects: false,
       has_wiki: false,
@@ -142,8 +142,8 @@ orgs.newOrg('eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.releng') {
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       has_discussions: true,
       has_projects: false,
@@ -162,8 +162,8 @@ orgs.newOrg('eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.releng.aggregator') {
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       description: "Aggregated repository for Eclipse Java IDE",
       has_discussions: true,
@@ -209,8 +209,8 @@ orgs.newOrg('eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.releng.buildtools') {
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       has_projects: false,
       has_wiki: false,
@@ -229,8 +229,8 @@ orgs.newOrg('eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.resources') {
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
@@ -251,8 +251,8 @@ orgs.newOrg('eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.runtime') {
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
@@ -270,8 +270,8 @@ orgs.newOrg('eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.swt') {
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       description: "Eclipse SWT",
       has_discussions: true,
       has_projects: false,
@@ -317,8 +317,8 @@ orgs.newOrg('eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.swt.binaries') {
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       description: "Eclipse SWT",
       has_projects: false,
       has_wiki: false,
@@ -344,8 +344,8 @@ orgs.newOrg('eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.team') {
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       has_projects: false,
       has_wiki: false,
@@ -364,8 +364,8 @@ orgs.newOrg('eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.text') {
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
@@ -383,8 +383,8 @@ orgs.newOrg('eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.ua') {
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       has_projects: false,
       has_wiki: false,
@@ -404,8 +404,8 @@ orgs.newOrg('eclipse-platform') {
     },
     orgs.newRepo('eclipse.platform.ui') {
       allow_auto_merge: true,
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       description: "Eclipse Platform",
       has_discussions: true,
       has_projects: false,
@@ -434,8 +434,8 @@ orgs.newOrg('eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.ui.tools') {
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       has_projects: false,
       has_wiki: false,
@@ -454,7 +454,7 @@ orgs.newOrg('eclipse-platform') {
       ],
     },
     orgs.newRepo('ui-best-practices') {
-      allow_merge_commit: false,
+      delete_branch_on_merge: false,
       description: "UI Best Practices for the Eclipse IDE",
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
@@ -472,8 +472,8 @@ orgs.newOrg('eclipse-platform') {
       ],
     },
     orgs.newRepo('www.eclipse.org-eclipse') {
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
@@ -494,8 +494,8 @@ orgs.newOrg('eclipse-platform') {
       ],
     },
     orgs.newRepo('www.eclipse.org-eclipse-news') {
-      allow_merge_commit: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
@@ -516,7 +516,9 @@ orgs.newOrg('eclipse-platform') {
       ],
     },
     orgs.newRepo('www.eclipse.org-swt') {
+      allow_merge_commit: true,
       default_branch: "master",
+      delete_branch_on_merge: false,
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
