@@ -1,6 +1,6 @@
 site_name: Otterdog configuration @ eclipse-platform
 site_description: Otterdog configuration @ eclipse-platform
-strict: true
+strict: false
 
 site_url: https://eclipse-platform.github.io/.eclipsefdn/
 
