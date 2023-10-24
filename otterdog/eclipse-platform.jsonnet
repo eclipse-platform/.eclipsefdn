@@ -4,7 +4,6 @@ orgs.newOrg('eclipse-platform') {
   settings+: {
     billing_email: "webmaster@eclipse.org",
     blog: "https://www.eclipse.org/eclipse/",
-    default_repository_permission: "none",
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "Eclipse Platform is a framework for rich client applications in Java, powering the Eclipse IDE and other toolsets",
     email: "platform-dev@eclipse.org",
@@ -43,6 +42,9 @@ orgs.newOrg('eclipse-platform') {
         "eclipse"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('eclipse.platform') {
       default_branch: "master",
@@ -54,6 +56,9 @@ orgs.newOrg('eclipse-platform') {
         "java"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -75,6 +80,9 @@ orgs.newOrg('eclipse-platform') {
       has_wiki: false,
       homepage: "https://www.eclipse.org/eclipse",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           bypass_pull_request_allowances+: [
@@ -108,6 +116,9 @@ orgs.newOrg('eclipse-platform') {
         "java"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -128,6 +139,9 @@ orgs.newOrg('eclipse-platform') {
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -147,7 +161,11 @@ orgs.newOrg('eclipse-platform') {
       dependabot_alerts_enabled: false,
       has_discussions: true,
       has_projects: false,
+      has_wiki: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -168,7 +186,6 @@ orgs.newOrg('eclipse-platform') {
       description: "Aggregated repository for Eclipse Java IDE",
       has_discussions: true,
       has_projects: false,
-      has_wiki: false,
       homepage: "https://www.eclipse.org/eclipse/",
       topics+: [
         "eclipse",
@@ -176,6 +193,9 @@ orgs.newOrg('eclipse-platform') {
         "java"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       webhooks: [
         orgs.newRepoWebhook('https://ci.eclipse.org/releng/github-webhook/') {
           content_type: "json",
@@ -215,6 +235,9 @@ orgs.newOrg('eclipse-platform') {
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -234,6 +257,9 @@ orgs.newOrg('eclipse-platform') {
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           bypass_pull_request_allowances+: [
@@ -256,6 +282,9 @@ orgs.newOrg('eclipse-platform') {
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -284,6 +313,9 @@ orgs.newOrg('eclipse-platform') {
         "ui"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       webhooks: [
         orgs.newRepoWebhook('https://ci.eclipse.org/releng/github-webhook/') {
           events+: [
@@ -324,6 +356,9 @@ orgs.newOrg('eclipse-platform') {
       has_wiki: false,
       homepage: "https://www.eclipse.org/swt/",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           bypass_pull_request_allowances+: [
@@ -350,6 +385,9 @@ orgs.newOrg('eclipse-platform') {
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -369,6 +407,9 @@ orgs.newOrg('eclipse-platform') {
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -389,6 +430,9 @@ orgs.newOrg('eclipse-platform') {
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -420,6 +464,9 @@ orgs.newOrg('eclipse-platform') {
         "swt"
       ],
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -440,6 +487,9 @@ orgs.newOrg('eclipse-platform') {
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -462,6 +512,9 @@ orgs.newOrg('eclipse-platform') {
       has_discussions: true,
       homepage: "https://eclipse-platform.github.io/ui-best-practices/",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       environments: [
         orgs.newEnvironment('github-pages') {
           branch_policies+: [
@@ -477,6 +530,9 @@ orgs.newOrg('eclipse-platform') {
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        enabled: false,
+      },
       webhooks: [
         orgs.newRepoWebhook('https://ci.eclipse.org/releng/github-webhook/') {
           content_type: "json",
@@ -499,6 +555,9 @@ orgs.newOrg('eclipse-platform') {
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       webhooks: [
         orgs.newRepoWebhook('https://ci.eclipse.org/releng/github-webhook/') {
           content_type: "json",
@@ -520,6 +579,9 @@ orgs.newOrg('eclipse-platform') {
       default_branch: "master",
       delete_branch_on_merge: false,
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
