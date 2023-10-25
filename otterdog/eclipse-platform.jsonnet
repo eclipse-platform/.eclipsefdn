@@ -2,7 +2,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
 orgs.newOrg('eclipse-platform') {
   settings+: {
-    billing_email: "webmaster@eclipse.org",
     blog: "https://www.eclipse.org/eclipse/",
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "Eclipse Platform is a framework for rich client applications in Java, powering the Eclipse IDE and other toolsets",
