@@ -452,7 +452,6 @@ orgs.newOrg('eclipse-platform') {
       description: "Eclipse Platform",
       has_discussions: true,
       has_projects: false,
-      has_wiki: false,
       homepage: "https://projects.eclipse.org/projects/eclipse.platform",
       topics+: [
         "eclipse",
