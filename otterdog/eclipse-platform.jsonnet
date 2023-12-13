@@ -49,7 +49,7 @@ orgs.newOrg('eclipse-platform') {
       default_branch: "master",
       delete_branch_on_merge: false,
       has_discussions: true,
-      homepage: "https://www.eclipse.org/eclipse/",
+      homepage: "https://eclipse.dev/eclipse/",
       topics+: [
         "eclipse",
         "java"
@@ -253,8 +253,10 @@ orgs.newOrg('eclipse-platform') {
     orgs.newRepo('eclipse.platform.resources') {
       default_branch: "master",
       delete_branch_on_merge: false,
+      dependabot_alerts_enabled: false,
       has_projects: false,
       has_wiki: false,
+      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -278,8 +280,10 @@ orgs.newOrg('eclipse-platform') {
     orgs.newRepo('eclipse.platform.runtime') {
       default_branch: "master",
       delete_branch_on_merge: false,
+      dependabot_alerts_enabled: false,
       has_projects: false,
       has_wiki: false,
+      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -383,6 +387,7 @@ orgs.newOrg('eclipse-platform') {
       dependabot_alerts_enabled: false,
       has_projects: false,
       has_wiki: false,
+      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -484,6 +489,7 @@ orgs.newOrg('eclipse-platform') {
       dependabot_alerts_enabled: false,
       has_projects: false,
       has_wiki: false,
+      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
