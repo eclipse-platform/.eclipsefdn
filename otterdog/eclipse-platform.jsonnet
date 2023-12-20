@@ -6,7 +6,6 @@ orgs.newOrg('eclipse-platform') {
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "Eclipse Platform is a framework for rich client applications in Java, powering the Eclipse IDE and other toolsets",
     email: "platform-dev@eclipse.org",
-    members_can_change_project_visibility: false,
     name: "Eclipse Platform",
     packages_containers_internal: false,
     packages_containers_public: false,
