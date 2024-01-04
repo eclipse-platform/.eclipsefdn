@@ -159,6 +159,7 @@ orgs.newOrg('eclipse-platform') {
       dependabot_alerts_enabled: false,
       has_discussions: true,
       has_projects: false,
+      has_issues: false,
       has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
