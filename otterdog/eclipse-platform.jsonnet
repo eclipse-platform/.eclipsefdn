@@ -401,6 +401,7 @@ orgs.newOrg('eclipse-platform') {
       delete_branch_on_merge: false,
       has_projects: false,
       has_wiki: false,
+      private_vulnerability_reporting_enabled: true,
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
