@@ -7,7 +7,6 @@ orgs.newOrg('eclipse-platform') {
     description: "Eclipse Platform is a framework for rich client applications in Java, powering the Eclipse IDE and other toolsets",
     email: "platform-dev@eclipse.org",
     name: "Eclipse Platform",
-    readers_can_create_discussions: true,
     security_managers+: [
       "eclipse-platform-committers"
     ],
