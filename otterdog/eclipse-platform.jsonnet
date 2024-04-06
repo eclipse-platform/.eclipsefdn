@@ -175,6 +175,7 @@ orgs.newOrg('eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.releng.aggregator') {
+      allow_auto_merge: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
