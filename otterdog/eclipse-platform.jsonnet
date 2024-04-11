@@ -3,7 +3,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 orgs.newOrg('eclipse-platform') {
   settings+: {
     blog: "https://www.eclipse.org/eclipse/",
-    dependabot_security_updates_enabled_for_new_repositories: false,
     description: "Eclipse Platform is a framework for rich client applications in Java, powering the Eclipse IDE and other toolsets",
     email: "platform-dev@eclipse.org",
     name: "Eclipse Platform",
@@ -11,7 +10,6 @@ orgs.newOrg('eclipse-platform') {
       "eclipse-platform-committers"
     ],
     twitter_username: "EclipseJavaIDE",
-    two_factor_requirement: false,
     web_commit_signoff_required: false,
     workflows+: {
       default_workflow_permissions: "write",
