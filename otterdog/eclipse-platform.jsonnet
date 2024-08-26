@@ -202,6 +202,9 @@ orgs.newOrg('eclipse-platform') {
         orgs.newRepoSecret('ECLIPSE_GITLAB_API_TOKEN') {
           value: "********",
         },
+        orgs.newRepoSecret('RELENG_BOT_PAT') {
+          value: "pass:bots/eclipse.platform.releng/github.com/token-hd4925",
+        },
       ],
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
