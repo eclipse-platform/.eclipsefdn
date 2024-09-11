@@ -200,7 +200,7 @@ orgs.newOrg('eclipse-platform') {
       ],
       secrets: [
         orgs.newRepoSecret('ECLIPSE_GITLAB_API_TOKEN') {
-          value: "********",
+          value: "pass:bots/eclipse.platform.releng/gitlab.eclipse.org/api-token",
         },
         orgs.newRepoSecret('RELENG_BOT_PAT') {
           value: "pass:bots/eclipse.platform.releng/github.com/token-hd4925",
