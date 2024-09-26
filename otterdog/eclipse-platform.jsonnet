@@ -64,6 +64,11 @@ orgs.newOrg('eclipse-platform') {
           requires_strict_status_checks: true,
         },
       ],
+      secrets: [
+        orgs.newRepoSecret('PLATFORM_BOT_PAT') {
+          value: "pass:bots/eclipse.platform/github.com/token-hd5020",
+        },
+      ],
     },
     orgs.newRepo('eclipse.platform.common') {
       default_branch: "master",
@@ -325,6 +330,9 @@ orgs.newOrg('eclipse-platform') {
         orgs.newRepoSecret('GIST_TOKEN') {
           value: "********",
         },
+        orgs.newRepoSecret('PLATFORM_BOT_PAT') {
+          value: "pass:bots/eclipse.platform/github.com/token-hd5020",
+        },
       ],
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
@@ -473,6 +481,11 @@ orgs.newOrg('eclipse-platform') {
           required_approving_review_count: 0,
           requires_status_checks: false,
           requires_strict_status_checks: true,
+        },
+      ],
+      secrets: [
+        orgs.newRepoSecret('PLATFORM_BOT_PAT') {
+          value: "pass:bots/eclipse.platform/github.com/token-hd5020",
         },
       ],
     },
