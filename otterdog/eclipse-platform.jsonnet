@@ -140,6 +140,11 @@ orgs.newOrg('eclipse-platform') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      secrets: [
+        orgs.newRepoSecret('ECLIPSE_GITLAB_API_TOKEN') {
+          value: "pass:bots/eclipse.platform.releng/gitlab.eclipse.org/api-token",
+        },
+      ],
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
