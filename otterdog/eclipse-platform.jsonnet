@@ -560,6 +560,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       ],
     },
     orgs.newRepo('www.eclipse.org-eclipse-news') {
+      archived: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       has_projects: false,
@@ -585,6 +586,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       ],
     },
     orgs.newRepo('www.eclipse.org-swt') {
+      archived: true,
       allow_merge_commit: true,
       default_branch: "master",
       delete_branch_on_merge: false,
