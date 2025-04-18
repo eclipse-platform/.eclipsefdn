@@ -2,7 +2,7 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
 orgs.newOrg('eclipse.platform', 'eclipse-platform') {
   settings+: {
-    blog: "https://www.eclipse.org/eclipse/",
+    blog: "https://eclipse.dev/eclipse/",
     description: "Eclipse Platform is a framework for rich client applications in Java, powering the Eclipse IDE and other toolsets",
     email: "platform-dev@eclipse.org",
     name: "Eclipse Platform",
@@ -27,7 +27,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       description: "Common contribution content for eclipse-platform repositories",
       has_discussions: true,
       has_projects: false,
-      homepage: "https://www.eclipse.org/eclipse/",
+      homepage: "https://eclipse.dev/eclipse/",
       topics+: [
         "eclipse"
       ],
@@ -37,6 +37,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       },
     },
     orgs.newRepo('eclipse.platform') {
+      description: "Eclipse Platform - a comprehensive set of frameworks and common services that collectively provide a powerful software development infrastructure.",
       default_branch: "master",
       delete_branch_on_merge: false,
       has_discussions: true,
@@ -73,7 +74,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       dependabot_alerts_enabled: false,
       has_projects: false,
       has_wiki: false,
-      homepage: "https://www.eclipse.org/eclipse",
+      homepage: "https://eclipse.dev/eclipse/",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -103,7 +104,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       description: "Eclipse Platform Debug functionality",
       has_projects: false,
       has_wiki: false,
-      homepage: "https://www.eclipse.org/eclipse/",
+      homepage: "https://eclipse.dev/eclipse/",
       topics+: [
         "debug",
         "eclipse",
@@ -180,14 +181,14 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.releng.aggregator') {
+      description: "Aggregated repository from which Eclipse SDK is being build",
       allow_auto_merge: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
-      description: "Aggregated repository for Eclipse Java IDE",
       has_discussions: true,
       has_projects: false,
-      homepage: "https://www.eclipse.org/eclipse/",
+      homepage: "https://eclipse.dev/eclipse/",
       topics+: [
         "eclipse",
         "ide",
@@ -305,16 +306,17 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
     orgs.newRepo('eclipse.platform.swt') {
       default_branch: "master",
       delete_branch_on_merge: false,
-      description: "Eclipse SWT",
+      description: "Eclipse SWT - The Standard Widget Toolkit",
       has_discussions: true,
       has_projects: false,
-      homepage: "https://www.eclipse.org/swt/",
+      homepage: "https://eclipse.dev/eclipse/swt/",
       topics+: [
         "cross-platform-gui",
         "eclipse",
         "java",
         "swt",
-        "ui"
+        "ui",
+        "gui",
       ],
       web_commit_signoff_required: false,
       workflows+: {
@@ -361,7 +363,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       description: "Eclipse SWT",
       has_projects: false,
       has_wiki: false,
-      homepage: "https://www.eclipse.org/swt/",
+      homepage: "https://eclipse.dev/eclipse/swt/",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -454,13 +456,13 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.ui') {
+      description: "Eclipse Platform UI - a comprehensive set of frameworks and common services that collectively provide a powerful software development infrastructure.",
       allow_auto_merge: true,
       default_branch: "master",
       delete_branch_on_merge: false,
-      description: "Eclipse Platform",
       has_discussions: true,
       has_projects: false,
-      homepage: "https://projects.eclipse.org/projects/eclipse.platform",
+      homepage: "https://eclipse.dev/eclipse/",
       topics+: [
         "eclipse",
         "gui",
