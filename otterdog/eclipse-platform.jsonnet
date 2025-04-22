@@ -213,6 +213,9 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
         orgs.newRepoSecret('RELENG_BOT_PAT') {
           value: "pass:bots/eclipse.platform.releng/github.com/token-hd4925",
         },
+        orgs.newRepoSecret('PLATFORM_BOT_PAT') {
+          value: "pass:bots/eclipse.platform/github.com/token-hd5020",
+        },
       ],
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
