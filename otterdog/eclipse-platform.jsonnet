@@ -40,6 +40,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       description: "Eclipse Platform - a comprehensive set of frameworks and common services that collectively provide a powerful software development infrastructure.",
       default_branch: "master",
       delete_branch_on_merge: false,
+      allow_merge_commit: true,
       has_discussions: true,
       homepage: "https://eclipse.dev/eclipse/",
       topics+: [
