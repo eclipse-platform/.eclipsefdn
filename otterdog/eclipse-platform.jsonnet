@@ -547,7 +547,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
-        enabled: false,
+        default_workflow_permissions: "read",
       },
       webhooks: [
         orgs.newRepoWebhook('https://ci.eclipse.org/releng/github-webhook/') {
@@ -573,7 +573,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       has_wiki: false,
       web_commit_signoff_required: false,
       workflows+: {
-        default_workflow_permissions: "write",
+        enabled: false,
       },
       webhooks: [
         orgs.newRepoWebhook('https://ci.eclipse.org/releng/github-webhook/') {
@@ -598,7 +598,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       delete_branch_on_merge: false,
       web_commit_signoff_required: false,
       workflows+: {
-        default_workflow_permissions: "write",
+        enabled: false,
       },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
