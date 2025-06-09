@@ -39,8 +39,8 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
     orgs.newRepo('eclipse.platform') {
       description: "Eclipse Platform - a comprehensive set of frameworks and common services that collectively provide a powerful software development infrastructure.",
       default_branch: "master",
+      allow_squash_merge: false,
       delete_branch_on_merge: false,
-      allow_merge_commit: false,
       has_discussions: true,
       homepage: "https://eclipse.dev/eclipse/",
       topics+: [
@@ -131,6 +131,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
     },
     orgs.newRepo('eclipse.platform.images') {
       default_branch: "master",
+      allow_squash_merge: false,
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       has_projects: false,
@@ -185,6 +186,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       description: "Aggregated repository from which Eclipse SDK is being build",
       allow_auto_merge: true,
       default_branch: "master",
+      allow_squash_merge: false,
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       has_discussions: true,
@@ -239,6 +241,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
     },
     orgs.newRepo('eclipse.platform.releng.buildtools') {
       default_branch: "master",
+      allow_squash_merge: false,
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       has_projects: false,
@@ -309,6 +312,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
     },
     orgs.newRepo('eclipse.platform.swt') {
       default_branch: "master",
+      allow_squash_merge: false,
       delete_branch_on_merge: false,
       description: "Eclipse SWT - The Standard Widget Toolkit",
       has_discussions: true,
@@ -463,6 +467,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       description: "Eclipse Platform UI - a comprehensive set of frameworks and common services that collectively provide a powerful software development infrastructure.",
       allow_auto_merge: true,
       default_branch: "master",
+      allow_squash_merge: false,
       delete_branch_on_merge: false,
       has_discussions: true,
       has_projects: false,
@@ -520,6 +525,8 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       ],
     },
     orgs.newRepo('ui-best-practices') {
+      default_branch: "main",
+      allow_squash_merge: false,
       delete_branch_on_merge: false,
       description: "UI Best Practices for the Eclipse IDE",
       gh_pages_build_type: "legacy",
@@ -542,6 +549,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
     },
     orgs.newRepo('www.eclipse.org-eclipse') {
       default_branch: "master",
+      allow_squash_merge: false,
       delete_branch_on_merge: false,
       has_projects: false,
       has_wiki: false,
@@ -593,7 +601,6 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
     },
     orgs.newRepo('www.eclipse.org-swt') {
       archived: true,
-      allow_merge_commit: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       web_commit_signoff_required: false,
