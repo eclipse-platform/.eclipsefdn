@@ -23,7 +23,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
   ],
   _repositories+:: [
     orgs.newRepo('.github') {
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       description: "Common contribution content for eclipse-platform repositories",
       has_discussions: true,
       has_projects: false,
@@ -40,7 +40,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       description: "Eclipse Platform - a comprehensive set of frameworks and common services that collectively provide a powerful software development infrastructure.",
       default_branch: "master",
       allow_squash_merge: false,
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       has_discussions: true,
       homepage: "https://eclipse.dev/eclipse/",
       topics+: [
@@ -132,7 +132,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
     orgs.newRepo('eclipse.platform.images') {
       default_branch: "master",
       allow_squash_merge: false,
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       dependabot_alerts_enabled: false,
       has_projects: false,
       has_wiki: false,
@@ -187,7 +187,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       allow_auto_merge: true,
       default_branch: "master",
       allow_squash_merge: false,
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       dependabot_alerts_enabled: false,
       has_discussions: true,
       has_projects: false,
@@ -242,7 +242,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
     orgs.newRepo('eclipse.platform.releng.buildtools') {
       default_branch: "master",
       allow_squash_merge: false,
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       dependabot_alerts_enabled: false,
       has_projects: false,
       has_wiki: false,
@@ -313,7 +313,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
     orgs.newRepo('eclipse.platform.swt') {
       default_branch: "master",
       allow_squash_merge: false,
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       description: "Eclipse SWT - The Standard Widget Toolkit",
       has_discussions: true,
       has_projects: false,
@@ -468,7 +468,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       allow_auto_merge: true,
       default_branch: "master",
       allow_squash_merge: false,
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       has_discussions: true,
       has_projects: false,
       homepage: "https://eclipse.dev/eclipse/",
@@ -527,7 +527,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
     orgs.newRepo('ui-best-practices') {
       default_branch: "main",
       allow_squash_merge: false,
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       description: "UI Best Practices for the Eclipse IDE",
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
@@ -550,7 +550,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
     orgs.newRepo('www.eclipse.org-eclipse') {
       default_branch: "master",
       allow_squash_merge: false,
-      delete_branch_on_merge: false,
+      delete_branch_on_merge: true,
       has_projects: false,
       has_wiki: false,
       web_commit_signoff_required: false,
