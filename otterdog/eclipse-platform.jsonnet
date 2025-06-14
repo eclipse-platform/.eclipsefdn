@@ -201,14 +201,6 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       workflows+: {
         default_workflow_permissions: "write",
       },
-      webhooks: [
-        orgs.newRepoWebhook('https://ci.eclipse.org/releng/github-webhook/') {
-          content_type: "json",
-          events+: [
-            "push"
-          ],
-        },
-      ],
       secrets: [
         orgs.newRepoSecret('ECLIPSE_GITLAB_API_TOKEN') {
           value: "pass:bots/eclipse.platform.releng/gitlab.eclipse.org/api-token",
@@ -557,14 +549,6 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       workflows+: {
         default_workflow_permissions: "read",
       },
-      webhooks: [
-        orgs.newRepoWebhook('https://ci.eclipse.org/releng/github-webhook/') {
-          content_type: "json",
-          events+: [
-            "push"
-          ],
-        },
-      ],
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
@@ -583,14 +567,6 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       workflows+: {
         enabled: false,
       },
-      webhooks: [
-        orgs.newRepoWebhook('https://ci.eclipse.org/releng/github-webhook/') {
-          content_type: "json",
-          events+: [
-            "push"
-          ],
-        },
-      ],
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
