@@ -70,6 +70,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.common') {
+      archived: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
@@ -100,6 +101,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.debug') {
+      archived: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       description: "Eclipse Platform Debug functionality",
@@ -160,6 +162,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.releng') {
+      archived: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
@@ -257,6 +260,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.resources') {
+      archived: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       has_projects: false,
@@ -282,6 +286,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.runtime') {
+      archived: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       has_projects: false,
@@ -359,6 +364,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.swt.binaries') {
+      archived: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       description: "Eclipse SWT",
@@ -389,6 +395,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.team') {
+      archived: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       has_projects: false,
@@ -411,6 +418,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.text') {
+      archived: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       has_projects: false,
@@ -434,6 +442,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.ua') {
+      archived: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
@@ -496,6 +505,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.ui.tools') {
+      archived: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       has_projects: false,
