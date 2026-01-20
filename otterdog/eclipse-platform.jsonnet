@@ -236,6 +236,7 @@ orgs.newOrg('eclipse.platform', 'eclipse-platform') {
       ],
     },
     orgs.newRepo('eclipse.platform.releng.buildtools') {
+      archived: true,
       default_branch: "master",
       allow_squash_merge: false,
       delete_branch_on_merge: true,
